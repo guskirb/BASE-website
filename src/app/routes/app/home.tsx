@@ -1,6 +1,10 @@
+import Head from "../../../components/seo/head";
 
 export default function Home() {
   return (
-    <div>home</div>
-  )
+    <>
+      <Head title="Home" />
+      <div>home</div>
+    </>
+  );
 }
