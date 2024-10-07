@@ -7,4 +7,8 @@ export const createRouter = () =>
       path: "/",
       element: <Home />,
     },
+    {
+      path: "*",
+      element: <Navigate to="/" />,
+    },
   ]);
