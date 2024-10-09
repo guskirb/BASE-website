@@ -1,14 +1,15 @@
+import { ReactNode } from "react";
 import { Link } from "react-router-dom";
 
 interface TextButtonProps {
-  text: string;
+  children: ReactNode;
   path: string;
 }
 
-export const Button = ({ text, path }: TextButtonProps) => {
+export const Button = ({ children, path }: TextButtonProps) => {
   return (
-    <button>
-      <Link to={path}>{text}</Link>
+    <button className="py-2 px-4 border rounded-lg bg-lime-700 text-white font-semibold">
+      <Link to={path}>{children}</Link>
     </button>
   );
 };
