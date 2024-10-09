@@ -1,8 +1,8 @@
 import { Phone } from "lucide-react";
 
-export default function Header() {
+export const Header = () => {
   return (
-    <div className="w-full border border-black h-24 flex justify-between items-center">
+    <div className="w-full border border-black h-24 flex justify-between items-center px-8">
       <div className="flex flex-col justify-center items-center">
         <h1 className="">B.A.S.E.</h1>
         <h2 className="text-sm">
@@ -20,4 +20,4 @@ export default function Header() {
       </div>
     </div>
   );
-}
+};

@@ -1,12 +1,12 @@
 import { ReactNode } from "react";
 
-import Header from "../ui/header/header";
+import { Header } from "../ui/header/header";
 
-export default function Layout({ children }: { children: ReactNode }) {
+export const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <Header />
       {children}
     </>
   );
-}
+};

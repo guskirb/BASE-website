@@ -7,10 +7,10 @@ interface HeadProps {
 
 const helmetData = new HelmetData({});
 
-export default function Head({ title = "", desc = "" }: HeadProps) {
+export const Head = ({ title = "", desc = "" }: HeadProps) => {
   return (
     <Helmet helmetData={helmetData} title={title ? `${title}` : undefined}>
       <meta name="description" content={desc} />
     </Helmet>
   );
-}
+};

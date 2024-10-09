@@ -1,10 +1,9 @@
-import Head from "../../../components/seo/head";
+import { Head } from "../../../components/seo/head";
 
-export default function Home() {
+export const Home = () => {
   return (
     <>
       <Head title="Home" />
-      <div>home</div>
     </>
   );
-}
+};
