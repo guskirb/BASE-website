@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useScript } from "../../../hooks/useScript";
+import { ReviewCard } from "./review-card";
 
 export const Reviews = () => {
   const { loaded } = useScript(import.meta.env.VITE_PLACE);
@@ -8,6 +9,10 @@ export const Reviews = () => {
   useEffect(() => {
     if (loaded) initReviews();
   }, [loaded]);
+
+  useEffect(() => {
+    console.log(reviews);
+  }, [reviews]);
 
   async function initReviews(): Promise<void> {
     const { Place } = (await google.maps.importLibrary(
@@ -21,8 +26,19 @@ export const Reviews = () => {
       fields: ["reviews"],
     });
 
-    if (place.reviews !== undefined) setReviews(place.reviews);
+    if (place.reviews) {
+      const filteredReviews = place.reviews.filter(
+        (review) => review.rating > 4
+      );
+      setReviews(filteredReviews);
+    }
   }
 
-  return <div></div>;
+  return (
+    <div className="flex justify-between box-border w-full gap-10">
+      {reviews.map((review) => (
+        <ReviewCard review={review} />
+      ))}
+    </div>
+  );
 };
