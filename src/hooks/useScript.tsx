@@ -6,6 +6,7 @@ export const useScript = (url: string) => {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = url;
+    script.async = true;
     script.addEventListener("load", () => setLoaded(true));
     document.body.appendChild(script);
 
