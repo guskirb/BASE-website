@@ -2,7 +2,7 @@ import { Rating } from "react-simple-star-rating";
 
 export const ReviewCard = ({ review }: { review: any }) => {
   return (
-    <div className="p-8 min-w-[200px] w-[300px] grow flex flex-col gap-5 rounded-xl bg-gray-100">
+    <div className="p-8 min-w-[200px] w-[350px] grow flex flex-col gap-5 rounded-xl bg-gray-100">
       <div className="flex flex-col justify-center items-center gap-5">
         <img
           src={review.authorAttribution.photoURI}
@@ -23,8 +23,8 @@ export const ReviewCard = ({ review }: { review: any }) => {
         </div>
       </div>
       <p className="text-center">
-        {review.text.length > 250
-          ? review.text.slice(0, 250) + "..."
+        {review.text.length > 350
+          ? review.text.slice(0, 350) + "..."
           : review.text}
       </p>
       

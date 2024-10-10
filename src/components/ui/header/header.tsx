@@ -4,7 +4,7 @@ import { TextButton } from "../buttons/text-button";
 
 export const Header = () => {
   return (
-    <div className="w-full h-24 flex justify-between items-center px-5 lg:px-16">
+    <div className="w-full 2xl:w-[1400px] h-24 flex justify-between items-center px-8 lg:px-16">
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-lime-700 text-2xl lg:text-4xl">B.A.S.E.</h1>
       </div>

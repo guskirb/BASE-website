@@ -35,10 +35,10 @@ export const Reviews = () => {
   }
 
   return (
-    <div className="w-full px-5 lg:px-16 py-10 flex flex-col gap-10 items-center">
+    <div className="w-full 2xl:w-[1400px] px-8 lg:px-16 py-10 flex flex-col gap-10 items-center">
       <h2 className="text-2xl lg:text-3xl">What our customers say</h2>
       <div className="flex justify-between box-border w-full gap-10 flex-wrap">
-        {reviews.map((review, index) => (
+        {reviews.slice(0, 3).map((review, index) => (
           <ReviewCard review={review} key={index} />
         ))}
       </div>
