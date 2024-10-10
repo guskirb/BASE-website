@@ -28,14 +28,14 @@ export const Reviews = () => {
 
     if (place.reviews) {
       const filteredReviews = place.reviews.filter(
-        (review) => review.rating > 4
+        (review) => review.rating! > 4
       );
       setReviews(filteredReviews);
     }
   }
 
   return (
-    <div className="flex justify-between box-border w-full gap-10">
+    <div className="flex justify-between box-border w-full gap-10 p-10 flex-wrap">
       {reviews.map((review) => (
         <ReviewCard review={review} />
       ))}
