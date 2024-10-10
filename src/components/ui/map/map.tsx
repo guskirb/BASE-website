@@ -1,7 +1,13 @@
+import { useEffect } from "react";
+
 import { useScript } from "../../../hooks/useScript";
 
 export const Map = () => {
-  useScript(import.meta.env.VITE_PLACE, initMap);
+  const { loaded } = useScript(import.meta.env.VITE_PLACE);
+
+  useEffect(() => {
+    if (loaded) initMap();
+  }, [loaded]);
 
   async function initMap(): Promise<void> {
     const { Map } = (await google.maps.importLibrary(

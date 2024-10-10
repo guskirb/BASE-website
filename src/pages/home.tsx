@@ -4,8 +4,8 @@ import { Map } from "../components/ui/map/map";
 export const Home = () => {
   return (
     <>
-    <Hero />
-    <Map />
+      <Hero />
+      <Map/>
     </>
   );
 };
