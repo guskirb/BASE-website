@@ -4,15 +4,12 @@ import { TextButton } from "../buttons/text-button";
 
 export const Header = () => {
   return (
-    <div className="w-full h-24 flex justify-between items-center">
+    <div className="w-full h-24 flex justify-between items-center px-5 lg:px-16">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-lime-700">B.A.S.E.</h1>
-        {/* <h2 className="text-sm text-lime-700">
-          Bournemouth Army Surplus Equipment & Base Kit
-        </h2> */}
+        <h1 className="text-lime-700 text-2xl lg:text-4xl">B.A.S.E.</h1>
       </div>
-      <div className="flex items-center gap-16">
-        <div className="flex gap-2 items-center">
+      <div className="flex items-center gap-5 lg:gap-16">
+        <div className="hidden lg:flex gap-2 items-center">
           <Phone size={18}/>
           <h2 className="font-medium">01202 535555</h2>
         </div>
