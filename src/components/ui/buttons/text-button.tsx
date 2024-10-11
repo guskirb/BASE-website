@@ -8,7 +8,7 @@ interface TextButtonProps {
 
 export const TextButton = ({ children, path }: TextButtonProps) => {
   return (
-    <button className="font-semibold text-base hover:text-lime-700 duration-300">
+    <button className="font-semibold hover:text-lime-700 duration-300 text-sm lg:text-base">
       <NavLink
         to={path}
         className={({ isActive, isPending }) =>

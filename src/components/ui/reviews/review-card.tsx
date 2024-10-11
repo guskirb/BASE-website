@@ -2,7 +2,7 @@ import { Rating } from "react-simple-star-rating";
 
 export const ReviewCard = ({ review }: { review: any }) => {
   return (
-    <div className="p-8 min-w-[200px] w-[350px] grow flex flex-col gap-5 rounded-xl bg-gray-100">
+    <div className="p-8 min-w-[180px] w-[350px] grow flex flex-col gap-5 rounded-xl bg-gray-100">
       <div className="flex items-center gap-5">
         <a href={review.authorAttribution.uri}>
           <img
