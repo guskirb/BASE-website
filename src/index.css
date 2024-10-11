@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Marbella-Army";
+  src: local("Marbella-Army"),
+    url("/fonts/marbella-army.otf") format("opentype");
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -43,3 +49,6 @@ h1 {
   display: flex;
 }
 
+.armyHeader {
+  font-family: Marbella-Army, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}

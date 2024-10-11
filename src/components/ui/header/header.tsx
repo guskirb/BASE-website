@@ -9,7 +9,7 @@ export const Header = () => {
       <div className="w-full 2xl:w-[1400px] h-24 flex justify-between items-center px-8 lg:px-16">
         <div className="flex flex-col justify-center items-center">
           <Link to="/">
-            <h1 className="text-white text-2xl lg:text-4xl">B.A.S.E.</h1>
+            <h1 className="text-white text-2xl lg:text-4xl armyHeader">B.A.S.E.</h1>
           </Link>
         </div>
         <div className="flex items-center gap-5 lg:gap-16 text-white">
