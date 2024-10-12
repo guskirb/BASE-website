@@ -35,7 +35,7 @@ export const Reviews = () => {
   }
 
   return (
-    <div className="w-full 2xl:w-[1400px] px-6 lg:px-16 py-10 flex flex-col gap-10 items-center">
+    <div className="w-full 2xl:w-[1400px] px-6 lg:px-16 py-16 flex flex-col gap-10 items-center">
       <h2 className="text-2xl lg:text-3xl">What our customers say</h2>
       <div className="flex justify-between box-border w-full gap-10 flex-wrap">
         {reviews.slice(0, 3).map((review, index) => (
