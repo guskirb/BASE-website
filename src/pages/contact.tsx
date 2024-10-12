@@ -1,9 +1,11 @@
-import { Map } from "../components/ui/map/map"
+import { ContactForm } from "../components/ui/contact-form/contact-form";
+import { Map } from "../components/ui/map/map";
 
 export const Contact = () => {
   return (
-    <div className="w-full h-[400px]  lg:h-[580px]">
-        <Map />
-    </div>
-  )
-}
+    <>
+      <Map />
+      <ContactForm />
+    </>
+  );
+};

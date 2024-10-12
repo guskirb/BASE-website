@@ -29,10 +29,10 @@ export const Map = () => {
   }
 
   return (
-    <>
+    <div className="w-full h-[400px]  lg:h-[580px]">
       <div id="latitud"></div>
       <div id="longitud"></div>
       <div id="map" className="map w-full h-full"></div>
-    </>
+    </div>
   );
 };
