@@ -7,7 +7,7 @@ import { Button } from "../buttons/button";
 export const Header = () => {
   return (
     <div className="w-full flex justify-center bg-white border-b border-slate-200 sticky top-0 z-20">
-      <div className="w-full 2xl:w-[1400px] h-20 flex justify-between items-center px-6 lg:px-16">
+      <div className="w-full 2xl:w-[1400px] h-20 flex justify-between items-center px-6">
         <div className="flex flex-col justify-center items-center">
           <Link to="/">
             <h1 className="text-black text-3xl lg:text-5xl armyHeader">B.A.S.E.</h1>
