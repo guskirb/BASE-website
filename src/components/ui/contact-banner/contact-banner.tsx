@@ -32,7 +32,7 @@ export const ContactBanner = () => {
 
   return (
     <div className="w-full flex justify-center">
-      <div className="w-full 2xl:w-[1400px] flex flex-col lg:flex-row gap-14 items-center justify-between py-10">
+      <div className="w-full 2xl:w-[1400px] flex flex-col lg:flex-row gap-14 items-center justify-between py-10 px-6">
         {bannerData.map((data) => (
           <div className="w-fit flex flex-col items-center gap-3">
             {data.icon}

@@ -14,9 +14,9 @@ export const Header = () => {
           </Link>
         </div>
         <div className="flex items-center gap-3 lg:gap-10 text-black">
-          <div className="hidden lg:flex gap-2 items-center">
-            <Phone size={18} />
-            <h2 className="font-medium">01202 535555</h2>
+          <div className="hidden lg:flex gap-1 items-center opacity-50">
+            <Phone size={16} />
+            <h2>01202 535555</h2>
           </div>
           <TextButton path="/">HOME</TextButton>
           <TextButton path="/about">ABOUT</TextButton>
