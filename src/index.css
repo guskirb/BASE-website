@@ -69,6 +69,10 @@ h1 {
   scale: 1.1;
 }
 
+.shopImg > img {
+  height: 466px;
+}
+
 input:active,
 input:focus,
 textarea:active,
