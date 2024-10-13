@@ -8,7 +8,7 @@ export const TextArea = ({ name, id }: TextAreaProps) => {
     <div className="flex flex-col">
       <label htmlFor={id}>{name}</label>
       <textarea
-        className="border p-2"
+        className="border p-2 resize-none"
         name={id}
         id={id}
         rows={4}
