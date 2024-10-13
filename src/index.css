@@ -68,3 +68,12 @@ h1 {
   -webkit-filter: blur(6px);
   scale: 1.1;
 }
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+  outline: none;
+  border: solid 1px black;
+  transition: all 0.3s ease-in-out;
+}
