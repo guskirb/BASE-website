@@ -13,7 +13,7 @@ export const ContactForm = () => {
           <Input name="NAME" id="name" type="text" />
           <Input name="EMAIL ADDRESS" id="email" type="email" />
           <TextArea name="YOUR MESSAGE" id="message" />
-          <button className="w-fit py-2 px-4 lg:py-3 lg:px-6 duration-300 bg-lime-900 hover:bg-lime-800 text-white z-10">Send Message</button>
+          <button className="w-fit py-2 px-4 lg:py-3 lg:px-6 duration-300 bg-lime-900 hover:bg-lime-800 text-white z-10">SEND MESSAGE</button>
         </form>
       </div>
     </div>

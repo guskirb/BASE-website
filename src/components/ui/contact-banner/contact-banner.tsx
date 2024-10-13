@@ -16,7 +16,16 @@ export const ContactBanner = () => {
     {
       icon: <Mail />,
       name: "Email",
-      details: <>base-bournemout@gmail.com</>,
+      details: (
+        <p
+          className="cursor-pointer"
+          onClick={() => {
+            window.location.href = "mailto:base-bournemout@gmail.com";
+          }}
+        >
+          base-bournemout@gmail.com
+        </p>
+      ),
     },
     {
       icon: <Phone />,
