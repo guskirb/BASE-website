@@ -7,10 +7,8 @@ import { TextArea } from "../form/text-area";
 export const ContactForm = () => {
   return (
     <div className="bg-gray-100 w-full flex justify-center">
-      <div className="w-full 2xl:w-[1400px] px-6 lg:px-16 py-16 flex gap-10 justify-center items-center">
-        <div className="hidden lg:block">
+      <div className="w-full 2xl:w-[1400px] px-6 lg:px-16 py-16 flex flex-col-reverse lg:flex-row gap-10 justify-center items-center">
         <LazyLoadImage src={baseShop} wrapperClassName="shopImg"/>
-        </div>
         <form
           action=""
           className="flex flex-col gap-3 bg-white p-8 w-[100%] lg:w-[50%]"

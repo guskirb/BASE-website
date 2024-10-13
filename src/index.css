@@ -69,8 +69,9 @@ h1 {
   scale: 1.1;
 }
 
-.shopImg > img {
+.shopImg {
   height: 466px;
+  overflow: hidden;
 }
 
 input:active,
