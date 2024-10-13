@@ -1,6 +1,8 @@
 import { Rating } from "react-simple-star-rating";
 
-export const ReviewCard = ({ review }: { review: any }) => {
+import { Review } from "../../../types/types";
+
+export const ReviewCard = ({ review }: { review: Review }) => {
   return (
     <div className="p-8 min-w-[180px] w-[350px] grow flex flex-col gap-5 rounded-xl bg-gray-100">
       <div className="flex items-center gap-5">
@@ -13,7 +15,9 @@ export const ReviewCard = ({ review }: { review: any }) => {
         </a>
         <div className="flex flex-col">
           <a href={review.authorAttribution.uri}>
-            <p className="font-semibold">{review.authorAttribution.displayName}</p>
+            <p className="font-semibold">
+              {review.authorAttribution.displayName}
+            </p>
           </a>
           <p className="mt-auto opacity-50">{review.Ig}</p>
           <Rating
